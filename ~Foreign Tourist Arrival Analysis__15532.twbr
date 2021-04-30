@@ -1,0 +1,2517 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0420.1112                               -->
+<workbook source-build='2021.1.1 (20211.21.0420.1112)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='ForeignTouristArrivalAnalysis' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='India-Tourism-Statistics-2019-Table-2.7.2' inline='true' name='federated.1btsnot030sls412h510c0x9l02g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='India-Tourism-Statistics-2019-Table-2.7.2' name='textscan.15oqk1715umpv01dcj5o41v635wm'>
+            <connection class='textscan' directory='C:/Users/LENOVO/Desktop/tourism india tableau' filename='India-Tourism-Statistics-2019-Table-2.7.2.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='India-Tourism-Statistics-2019-Table-2.7.2.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Year' />
+            <column datatype='integer' name='Arrivals' />
+            <column datatype='real' name='% distribution by quarter - 1st Quarter - (Jan-Mar)' />
+            <column datatype='real' name='% distribution by quarter - 2nd Quarter - (Apr-June)' />
+            <column datatype='real' name='% distribution by quarter - 3rd Quarter - (July-Sep)' />
+            <column datatype='real' name='% distribution by quarter - 4th Quarter - (Oct-Dec)' />
+            <column datatype='string' name='Category' />
+            <column datatype='string' name='Country of Nationality' />
+            <column datatype='integer' name='Arrivals (in Numbers)' />
+            <column datatype='real' name='Air' />
+            <column datatype='real' name='Sea' />
+            <column datatype='real' name='Rail' />
+            <column datatype='real' name='Road' />
+            <column datatype='real' name='% distribution of FTAs by ports - Mumbai Airport' />
+            <column datatype='real' name='% distribution of FTAs by ports - Kolkata Airport' />
+            <column datatype='real' name='% distribution of FTAs by ports - Chennai Airport' />
+            <column datatype='real' name='% distribution of FTAs by ports - Delhi Airport' />
+            <column datatype='string' name='% distribution of FTAs by ports - Bengaluru Airport' />
+            <column datatype='string' name='% distribution of FTAs by ports - Cochin Airport' />
+            <column datatype='string' name='% distribution of FTAs by ports - Haridaspur Land Checkpost' />
+            <column datatype='string' name='% distribution of FTAs by ports - Hyderabad Airport' />
+            <column datatype='real' name='% distribution of FTAs by ports - Others' />
+            <column datatype='real' name='0-14' />
+            <column datatype='real' name='15-24' />
+            <column datatype='real' name='25-34' />
+            <column datatype='real' name='35-44' />
+            <column datatype='real' name='45-54' />
+            <column datatype='real' name='55-64' />
+            <column datatype='real' name='65 and Above' />
+            <column datatype='real' name='World - Number (in million)' />
+            <column datatype='real' name='World - % Change' />
+            <column datatype='real' name='India - Number (in million)' />
+            <column datatype='real' name='India - % Change' />
+            <column datatype='real' name='Percentage Share of India' />
+            <column datatype='string' name='Rank of India' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.3.3.csv' table='[India-Tourism-Statistics-2019-Table-2.3.3#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='integer' name='Arrivals' ordinal='1' />
+              <column datatype='real' name='% distribution by quarter - 1st Quarter - (Jan-Mar)' ordinal='2' />
+              <column datatype='real' name='% distribution by quarter - 2nd Quarter - (Apr-June)' ordinal='3' />
+              <column datatype='real' name='% distribution by quarter - 3rd Quarter - (July-Sep)' ordinal='4' />
+              <column datatype='real' name='% distribution by quarter - 4th Quarter - (Oct-Dec)' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.4.2.csv' table='[India-Tourism-Statistics-2019-Table-2.4.2#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='Category' ordinal='0' />
+              <column datatype='string' name='Country of Nationality' ordinal='1' />
+              <column datatype='integer' name='Arrivals (in Numbers)' ordinal='2' />
+              <column datatype='real' name='Air' ordinal='3' />
+              <column datatype='real' name='Sea' ordinal='4' />
+              <column datatype='real' name='Rail' ordinal='5' />
+              <column datatype='real' name='Road' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.5.1.csv' table='[India-Tourism-Statistics-2019-Table-2.5.1#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='integer' name='Arrivals' ordinal='1' />
+              <column datatype='real' name='% distribution of FTAs by ports - Mumbai Airport' ordinal='2' />
+              <column datatype='real' name='% distribution of FTAs by ports - Kolkata Airport' ordinal='3' />
+              <column datatype='real' name='% distribution of FTAs by ports - Chennai Airport' ordinal='4' />
+              <column datatype='real' name='% distribution of FTAs by ports - Delhi Airport' ordinal='5' />
+              <column datatype='string' name='% distribution of FTAs by ports - Bengaluru Airport' ordinal='6' />
+              <column datatype='string' name='% distribution of FTAs by ports - Cochin Airport' ordinal='7' />
+              <column datatype='string' name='% distribution of FTAs by ports - Haridaspur Land Checkpost' ordinal='8' />
+              <column datatype='string' name='% distribution of FTAs by ports - Hyderabad Airport' ordinal='9' />
+              <column datatype='real' name='% distribution of FTAs by ports - Others' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.7.2.csv' table='[India-Tourism-Statistics-2019-Table-2.7.2#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='Category' ordinal='0' />
+              <column datatype='string' name='Country of Nationality' ordinal='1' />
+              <column datatype='integer' name='Arrivals (in Numbers)' ordinal='2' />
+              <column datatype='real' name='0-14' ordinal='3' />
+              <column datatype='real' name='15-24' ordinal='4' />
+              <column datatype='real' name='25-34' ordinal='5' />
+              <column datatype='real' name='35-44' ordinal='6' />
+              <column datatype='real' name='45-54' ordinal='7' />
+              <column datatype='real' name='55-64' ordinal='8' />
+              <column datatype='real' name='65 and Above' ordinal='9' />
+            </columns>
+          </relation>
+          <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-3.1.2 (1).csv' table='[India-Tourism-Statistics-2019-Table-3.1.2 (1)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='real' name='World - Number (in million)' ordinal='1' />
+              <column datatype='real' name='World - % Change' ordinal='2' />
+              <column datatype='real' name='India - Number (in million)' ordinal='3' />
+              <column datatype='string' name='India - % Change' ordinal='4' />
+              <column datatype='real' name='Percentage Share of India' ordinal='5' />
+              <column datatype='string' name='Rank of India' ordinal='6' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='India-Tourism-Statistics-2019-Table-2.7.2.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Year' />
+            <column datatype='integer' name='Arrivals' />
+            <column datatype='real' name='% distribution by quarter - 1st Quarter - (Jan-Mar)' />
+            <column datatype='real' name='% distribution by quarter - 2nd Quarter - (Apr-June)' />
+            <column datatype='real' name='% distribution by quarter - 3rd Quarter - (July-Sep)' />
+            <column datatype='real' name='% distribution by quarter - 4th Quarter - (Oct-Dec)' />
+            <column datatype='string' name='Category' />
+            <column datatype='string' name='Country of Nationality' />
+            <column datatype='integer' name='Arrivals (in Numbers)' />
+            <column datatype='real' name='Air' />
+            <column datatype='real' name='Sea' />
+            <column datatype='real' name='Rail' />
+            <column datatype='real' name='Road' />
+            <column datatype='real' name='% distribution of FTAs by ports - Mumbai Airport' />
+            <column datatype='real' name='% distribution of FTAs by ports - Kolkata Airport' />
+            <column datatype='real' name='% distribution of FTAs by ports - Chennai Airport' />
+            <column datatype='real' name='% distribution of FTAs by ports - Delhi Airport' />
+            <column datatype='string' name='% distribution of FTAs by ports - Bengaluru Airport' />
+            <column datatype='string' name='% distribution of FTAs by ports - Cochin Airport' />
+            <column datatype='string' name='% distribution of FTAs by ports - Haridaspur Land Checkpost' />
+            <column datatype='string' name='% distribution of FTAs by ports - Hyderabad Airport' />
+            <column datatype='real' name='% distribution of FTAs by ports - Others' />
+            <column datatype='real' name='0-14' />
+            <column datatype='real' name='15-24' />
+            <column datatype='real' name='25-34' />
+            <column datatype='real' name='35-44' />
+            <column datatype='real' name='45-54' />
+            <column datatype='real' name='55-64' />
+            <column datatype='real' name='65 and Above' />
+            <column datatype='real' name='World - Number (in million)' />
+            <column datatype='real' name='World - % Change' />
+            <column datatype='real' name='India - Number (in million)' />
+            <column datatype='real' name='India - % Change' />
+            <column datatype='real' name='Percentage Share of India' />
+            <column datatype='string' name='Rank of India' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.3.3.csv' table='[India-Tourism-Statistics-2019-Table-2.3.3#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='integer' name='Arrivals' ordinal='1' />
+              <column datatype='real' name='% distribution by quarter - 1st Quarter - (Jan-Mar)' ordinal='2' />
+              <column datatype='real' name='% distribution by quarter - 2nd Quarter - (Apr-June)' ordinal='3' />
+              <column datatype='real' name='% distribution by quarter - 3rd Quarter - (July-Sep)' ordinal='4' />
+              <column datatype='real' name='% distribution by quarter - 4th Quarter - (Oct-Dec)' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.4.2.csv' table='[India-Tourism-Statistics-2019-Table-2.4.2#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='Category' ordinal='0' />
+              <column datatype='string' name='Country of Nationality' ordinal='1' />
+              <column datatype='integer' name='Arrivals (in Numbers)' ordinal='2' />
+              <column datatype='real' name='Air' ordinal='3' />
+              <column datatype='real' name='Sea' ordinal='4' />
+              <column datatype='real' name='Rail' ordinal='5' />
+              <column datatype='real' name='Road' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.5.1.csv' table='[India-Tourism-Statistics-2019-Table-2.5.1#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='integer' name='Arrivals' ordinal='1' />
+              <column datatype='real' name='% distribution of FTAs by ports - Mumbai Airport' ordinal='2' />
+              <column datatype='real' name='% distribution of FTAs by ports - Kolkata Airport' ordinal='3' />
+              <column datatype='real' name='% distribution of FTAs by ports - Chennai Airport' ordinal='4' />
+              <column datatype='real' name='% distribution of FTAs by ports - Delhi Airport' ordinal='5' />
+              <column datatype='string' name='% distribution of FTAs by ports - Bengaluru Airport' ordinal='6' />
+              <column datatype='string' name='% distribution of FTAs by ports - Cochin Airport' ordinal='7' />
+              <column datatype='string' name='% distribution of FTAs by ports - Haridaspur Land Checkpost' ordinal='8' />
+              <column datatype='string' name='% distribution of FTAs by ports - Hyderabad Airport' ordinal='9' />
+              <column datatype='real' name='% distribution of FTAs by ports - Others' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.7.2.csv' table='[India-Tourism-Statistics-2019-Table-2.7.2#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='Category' ordinal='0' />
+              <column datatype='string' name='Country of Nationality' ordinal='1' />
+              <column datatype='integer' name='Arrivals (in Numbers)' ordinal='2' />
+              <column datatype='real' name='0-14' ordinal='3' />
+              <column datatype='real' name='15-24' ordinal='4' />
+              <column datatype='real' name='25-34' ordinal='5' />
+              <column datatype='real' name='35-44' ordinal='6' />
+              <column datatype='real' name='45-54' ordinal='7' />
+              <column datatype='real' name='55-64' ordinal='8' />
+              <column datatype='real' name='65 and Above' ordinal='9' />
+            </columns>
+          </relation>
+          <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-3.1.2 (1).csv' table='[India-Tourism-Statistics-2019-Table-3.1.2 (1)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='real' name='World - Number (in million)' ordinal='1' />
+              <column datatype='real' name='World - % Change' ordinal='2' />
+              <column datatype='real' name='India - Number (in million)' ordinal='3' />
+              <column datatype='string' name='India - % Change' ordinal='4' />
+              <column datatype='real' name='Percentage Share of India' ordinal='5' />
+              <column datatype='string' name='Rank of India' ordinal='6' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrivals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Arrivals]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Arrivals</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution by quarter - 1st Quarter - (Jan-Mar)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% distribution by quarter - 1st Quarter - (Jan-Mar)]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution by quarter - 1st Quarter - (Jan-Mar)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution by quarter - 2nd Quarter - (Apr-June)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% distribution by quarter - 2nd Quarter - (Apr-June)]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution by quarter - 2nd Quarter - (Apr-June)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution by quarter - 3rd Quarter - (July-Sep)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% distribution by quarter - 3rd Quarter - (July-Sep)]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution by quarter - 3rd Quarter - (July-Sep)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution by quarter - 4th Quarter - (Oct-Dec)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% distribution by quarter - 4th Quarter - (Oct-Dec)]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution by quarter - 4th Quarter - (Oct-Dec)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country of Nationality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country of Nationality]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Country of Nationality</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrivals (in Numbers)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Arrivals (in Numbers)]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Arrivals (in Numbers)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Air</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Air]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Air</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sea</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sea]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Sea</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rail</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rail]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Rail</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Road</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Road]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Road</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution of FTAs by ports - Mumbai Airport</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% distribution of FTAs by ports - Mumbai Airport]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution of FTAs by ports - Mumbai Airport</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution of FTAs by ports - Kolkata Airport</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% distribution of FTAs by ports - Kolkata Airport]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution of FTAs by ports - Kolkata Airport</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution of FTAs by ports - Chennai Airport</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% distribution of FTAs by ports - Chennai Airport]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution of FTAs by ports - Chennai Airport</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution of FTAs by ports - Delhi Airport</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% distribution of FTAs by ports - Delhi Airport]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution of FTAs by ports - Delhi Airport</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution of FTAs by ports - Bengaluru Airport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[% distribution of FTAs by ports - Bengaluru Airport]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution of FTAs by ports - Bengaluru Airport</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution of FTAs by ports - Cochin Airport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[% distribution of FTAs by ports - Cochin Airport]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution of FTAs by ports - Cochin Airport</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution of FTAs by ports - Haridaspur Land Checkpost</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[% distribution of FTAs by ports - Haridaspur Land Checkpost]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution of FTAs by ports - Haridaspur Land Checkpost</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution of FTAs by ports - Hyderabad Airport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[% distribution of FTAs by ports - Hyderabad Airport]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution of FTAs by ports - Hyderabad Airport</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% distribution of FTAs by ports - Others</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% distribution of FTAs by ports - Others]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>% distribution of FTAs by ports - Others</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>0-14</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[0-14]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>0-14</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>15-24</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[15-24]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>15-24</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>25-34</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[25-34]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>25-34</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>35-44</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[35-44]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>35-44</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>45-54</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[45-54]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>45-54</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>55-64</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[55-64]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>55-64</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>65 and Above</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[65 and Above]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>65 and Above</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>World - Number (in million)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[World - Number (in million)]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>World - Number (in million)</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>World - % Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[World - % Change]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>World - % Change</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>India - Number (in million)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[India - Number (in million)]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>India - Number (in million)</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>India - % Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[India - % Change]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>India - % Change</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage Share of India</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage Share of India]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Percentage Share of India</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank of India</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Rank of India]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Rank of India</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[India-Tourism-Statistics-2019-Table-2.7.2.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[0-14]' role='measure' type='quantitative' />
+      <column datatype='real' name='[15-24]' role='measure' type='quantitative' />
+      <column datatype='real' name='[25-34]' role='measure' type='quantitative' />
+      <column datatype='real' name='[35-44]' role='measure' type='quantitative' />
+      <column datatype='real' name='[45-54]' role='measure' type='quantitative' />
+      <column datatype='real' name='[55-64]' role='measure' type='quantitative' />
+      <column datatype='real' name='[65 and Above]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Country of Nationality]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;Kazakhistan&quot;' value='&quot;Kazakhstan&quot;' />
+          <semantic-value key='&quot;United Republic Of Tanzan&quot;' value='&quot;Tanzania&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='Rank of India - Split 1' datatype='integer' datatype-customized='true' name='[Rank of India - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1btsnot030sls412h510c0x9l02g].[Rank of India]'>
+        <calculation class='tableau' formula='INT(TRIM( SPLIT( [Rank of India], &quot;t&quot;, 1 ) ))' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='India-Tourism-Statistics-2019-Table-2.7.2.csv' datatype='table' name='[__tableau_internal_object_id__].[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]' role='measure' type='quantitative' />
+      <column-instance column='[Country of Nationality]' derivation='None' name='[none:Country of Nationality:nk]' pivot='key' type='nominal' />
+      <column-instance column='[0-14]' derivation='Sum' name='[sum:0-14:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[15-24]' derivation='Sum' name='[sum:15-24:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[25-34]' derivation='Sum' name='[sum:25-34:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[35-44]' derivation='Sum' name='[sum:35-44:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[45-54]' derivation='Sum' name='[sum:45-54:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[55-64]' derivation='Sum' name='[sum:55-64:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[65 and Above]' derivation='Sum' name='[sum:65 and Above:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/LENOVO/Documents/My Tableau Repository/Datasources/India-Tourism-Statistics-2019-Table-2.7.2.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/30/2021 03:34:21 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='India-Tourism-Statistics-2019-Table-2.7.2' increment-value='%null%' refresh-type='create' rows-inserted='221' timestamp-start='2021-04-30 15:34:21.479' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arrivals</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Arrivals]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arrivals</remote-alias>
+              <ordinal>1</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution by quarter - 1st Quarter - (Jan-Mar)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% distribution by quarter - 1st Quarter - (Jan-Mar)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution by quarter - 1st Quarter - (Jan-Mar)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution by quarter - 2nd Quarter - (Apr-June)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% distribution by quarter - 2nd Quarter - (Apr-June)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution by quarter - 2nd Quarter - (Apr-June)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution by quarter - 3rd Quarter - (July-Sep)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% distribution by quarter - 3rd Quarter - (July-Sep)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution by quarter - 3rd Quarter - (July-Sep)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution by quarter - 4th Quarter - (Oct-Dec)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% distribution by quarter - 4th Quarter - (Oct-Dec)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution by quarter - 4th Quarter - (Oct-Dec)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>6</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country of Nationality</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country of Nationality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country of Nationality</remote-alias>
+              <ordinal>7</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arrivals (in Numbers)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Arrivals (in Numbers)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arrivals (in Numbers)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Air</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Air]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Air</remote-alias>
+              <ordinal>9</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sea</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sea]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sea</remote-alias>
+              <ordinal>10</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rail</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rail]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rail</remote-alias>
+              <ordinal>11</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Road</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Road]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Road</remote-alias>
+              <ordinal>12</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution of FTAs by ports - Mumbai Airport</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% distribution of FTAs by ports - Mumbai Airport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution of FTAs by ports - Mumbai Airport</remote-alias>
+              <ordinal>13</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution of FTAs by ports - Kolkata Airport</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% distribution of FTAs by ports - Kolkata Airport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution of FTAs by ports - Kolkata Airport</remote-alias>
+              <ordinal>14</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution of FTAs by ports - Chennai Airport</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% distribution of FTAs by ports - Chennai Airport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution of FTAs by ports - Chennai Airport</remote-alias>
+              <ordinal>15</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution of FTAs by ports - Delhi Airport</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% distribution of FTAs by ports - Delhi Airport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution of FTAs by ports - Delhi Airport</remote-alias>
+              <ordinal>16</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution of FTAs by ports - Bengaluru Airport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[% distribution of FTAs by ports - Bengaluru Airport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution of FTAs by ports - Bengaluru Airport</remote-alias>
+              <ordinal>17</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution of FTAs by ports - Cochin Airport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[% distribution of FTAs by ports - Cochin Airport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution of FTAs by ports - Cochin Airport</remote-alias>
+              <ordinal>18</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution of FTAs by ports - Haridaspur Land Checkpost</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[% distribution of FTAs by ports - Haridaspur Land Checkpost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution of FTAs by ports - Haridaspur Land Checkpost</remote-alias>
+              <ordinal>19</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution of FTAs by ports - Hyderabad Airport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[% distribution of FTAs by ports - Hyderabad Airport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution of FTAs by ports - Hyderabad Airport</remote-alias>
+              <ordinal>20</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% distribution of FTAs by ports - Others</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% distribution of FTAs by ports - Others]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% distribution of FTAs by ports - Others</remote-alias>
+              <ordinal>21</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>0-14</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[0-14]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>0-14</remote-alias>
+              <ordinal>22</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>15-24</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[15-24]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>15-24</remote-alias>
+              <ordinal>23</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>25-34</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[25-34]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>25-34</remote-alias>
+              <ordinal>24</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>35-44</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[35-44]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>35-44</remote-alias>
+              <ordinal>25</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>45-54</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[45-54]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>45-54</remote-alias>
+              <ordinal>26</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>55-64</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[55-64]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>55-64</remote-alias>
+              <ordinal>27</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>65 and Above</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[65 and Above]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>65 and Above</remote-alias>
+              <ordinal>28</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>World - Number (in million)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[World - Number (in million)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>World - Number (in million)</remote-alias>
+              <ordinal>29</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>World - % Change</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[World - % Change]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>World - % Change</remote-alias>
+              <ordinal>30</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>India - Number (in million)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[India - Number (in million)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>India - Number (in million)</remote-alias>
+              <ordinal>31</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>India - % Change</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[India - % Change]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>India - % Change</remote-alias>
+              <ordinal>32</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Percentage Share of India</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Percentage Share of India]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percentage Share of India</remote-alias>
+              <ordinal>33</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rank of India</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Rank of India]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rank of India</remote-alias>
+              <ordinal>34</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>35</ordinal>
+              <family>India-Tourism-Statistics-2019-Table-2.7.2.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:0-14:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:45-54:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:35-44:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1btsnot030sls412h510c0x9l02g]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:25-34:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:65 and Above:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:15-24:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:55-64:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Country of Nationality:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Bhutan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kazakhistan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Not Classified Elsewhere - Total&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;United Republic Of Tanzan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Czech Republic&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mauritius&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bahrain&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Republic of Korea&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Grand Total&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Myanmar (Burma)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Myanmar (burma)&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sudan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Taiwan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Total&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Republic Of Korea&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Yemen&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Others&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Maldives&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='India-Tourism-Statistics-2019-Table-2.7.2.csv' id='India-Tourism-Statistics-2019-Table-2.7.2.csv_C5DDC7EE34ED48F5ABC2C77D0FBF07CB'>
+            <properties context=''>
+              <relation all='true' name='India-Tourism-Statistics-2019-Table-2.7.2.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Year' />
+                  <column datatype='integer' name='Arrivals' />
+                  <column datatype='real' name='% distribution by quarter - 1st Quarter - (Jan-Mar)' />
+                  <column datatype='real' name='% distribution by quarter - 2nd Quarter - (Apr-June)' />
+                  <column datatype='real' name='% distribution by quarter - 3rd Quarter - (July-Sep)' />
+                  <column datatype='real' name='% distribution by quarter - 4th Quarter - (Oct-Dec)' />
+                  <column datatype='string' name='Category' />
+                  <column datatype='string' name='Country of Nationality' />
+                  <column datatype='integer' name='Arrivals (in Numbers)' />
+                  <column datatype='real' name='Air' />
+                  <column datatype='real' name='Sea' />
+                  <column datatype='real' name='Rail' />
+                  <column datatype='real' name='Road' />
+                  <column datatype='real' name='% distribution of FTAs by ports - Mumbai Airport' />
+                  <column datatype='real' name='% distribution of FTAs by ports - Kolkata Airport' />
+                  <column datatype='real' name='% distribution of FTAs by ports - Chennai Airport' />
+                  <column datatype='real' name='% distribution of FTAs by ports - Delhi Airport' />
+                  <column datatype='string' name='% distribution of FTAs by ports - Bengaluru Airport' />
+                  <column datatype='string' name='% distribution of FTAs by ports - Cochin Airport' />
+                  <column datatype='string' name='% distribution of FTAs by ports - Haridaspur Land Checkpost' />
+                  <column datatype='string' name='% distribution of FTAs by ports - Hyderabad Airport' />
+                  <column datatype='real' name='% distribution of FTAs by ports - Others' />
+                  <column datatype='real' name='0-14' />
+                  <column datatype='real' name='15-24' />
+                  <column datatype='real' name='25-34' />
+                  <column datatype='real' name='35-44' />
+                  <column datatype='real' name='45-54' />
+                  <column datatype='real' name='55-64' />
+                  <column datatype='real' name='65 and Above' />
+                  <column datatype='real' name='World - Number (in million)' />
+                  <column datatype='real' name='World - % Change' />
+                  <column datatype='real' name='India - Number (in million)' />
+                  <column datatype='real' name='India - % Change' />
+                  <column datatype='real' name='Percentage Share of India' />
+                  <column datatype='string' name='Rank of India' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.3.3.csv' table='[India-Tourism-Statistics-2019-Table-2.3.3#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='Year' ordinal='0' />
+                    <column datatype='integer' name='Arrivals' ordinal='1' />
+                    <column datatype='real' name='% distribution by quarter - 1st Quarter - (Jan-Mar)' ordinal='2' />
+                    <column datatype='real' name='% distribution by quarter - 2nd Quarter - (Apr-June)' ordinal='3' />
+                    <column datatype='real' name='% distribution by quarter - 3rd Quarter - (July-Sep)' ordinal='4' />
+                    <column datatype='real' name='% distribution by quarter - 4th Quarter - (Oct-Dec)' ordinal='5' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.4.2.csv' table='[India-Tourism-Statistics-2019-Table-2.4.2#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='string' name='Category' ordinal='0' />
+                    <column datatype='string' name='Country of Nationality' ordinal='1' />
+                    <column datatype='integer' name='Arrivals (in Numbers)' ordinal='2' />
+                    <column datatype='real' name='Air' ordinal='3' />
+                    <column datatype='real' name='Sea' ordinal='4' />
+                    <column datatype='real' name='Rail' ordinal='5' />
+                    <column datatype='real' name='Road' ordinal='6' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.5.1.csv' table='[India-Tourism-Statistics-2019-Table-2.5.1#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='Year' ordinal='0' />
+                    <column datatype='integer' name='Arrivals' ordinal='1' />
+                    <column datatype='real' name='% distribution of FTAs by ports - Mumbai Airport' ordinal='2' />
+                    <column datatype='real' name='% distribution of FTAs by ports - Kolkata Airport' ordinal='3' />
+                    <column datatype='real' name='% distribution of FTAs by ports - Chennai Airport' ordinal='4' />
+                    <column datatype='real' name='% distribution of FTAs by ports - Delhi Airport' ordinal='5' />
+                    <column datatype='string' name='% distribution of FTAs by ports - Bengaluru Airport' ordinal='6' />
+                    <column datatype='string' name='% distribution of FTAs by ports - Cochin Airport' ordinal='7' />
+                    <column datatype='string' name='% distribution of FTAs by ports - Haridaspur Land Checkpost' ordinal='8' />
+                    <column datatype='string' name='% distribution of FTAs by ports - Hyderabad Airport' ordinal='9' />
+                    <column datatype='real' name='% distribution of FTAs by ports - Others' ordinal='10' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-2.7.2.csv' table='[India-Tourism-Statistics-2019-Table-2.7.2#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='string' name='Category' ordinal='0' />
+                    <column datatype='string' name='Country of Nationality' ordinal='1' />
+                    <column datatype='integer' name='Arrivals (in Numbers)' ordinal='2' />
+                    <column datatype='real' name='0-14' ordinal='3' />
+                    <column datatype='real' name='15-24' ordinal='4' />
+                    <column datatype='real' name='25-34' ordinal='5' />
+                    <column datatype='real' name='35-44' ordinal='6' />
+                    <column datatype='real' name='45-54' ordinal='7' />
+                    <column datatype='real' name='55-64' ordinal='8' />
+                    <column datatype='real' name='65 and Above' ordinal='9' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.15oqk1715umpv01dcj5o41v635wm' name='India-Tourism-Statistics-2019-Table-3.1.2 (1).csv' table='[India-Tourism-Statistics-2019-Table-3.1.2 (1)#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='Year' ordinal='0' />
+                    <column datatype='real' name='World - Number (in million)' ordinal='1' />
+                    <column datatype='real' name='World - % Change' ordinal='2' />
+                    <column datatype='real' name='India - Number (in million)' ordinal='3' />
+                    <column datatype='string' name='India - % Change' ordinal='4' />
+                    <column datatype='real' name='Percentage Share of India' ordinal='5' />
+                    <column datatype='string' name='Rank of India' ordinal='6' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='FTA based on Age Group'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='India-Tourism-Statistics-2019-Table-2.7.2' name='federated.1btsnot030sls412h510c0x9l02g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1btsnot030sls412h510c0x9l02g'>
+            <column datatype='real' name='[0-14]' role='measure' type='quantitative' />
+            <column datatype='real' name='[15-24]' role='measure' type='quantitative' />
+            <column datatype='real' name='[25-34]' role='measure' type='quantitative' />
+            <column datatype='real' name='[35-44]' role='measure' type='quantitative' />
+            <column datatype='real' name='[45-54]' role='measure' type='quantitative' />
+            <column datatype='real' name='[55-64]' role='measure' type='quantitative' />
+            <column datatype='real' name='[65 and Above]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country of Nationality]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Kazakhistan&quot;' value='&quot;Kazakhstan&quot;' />
+                <semantic-value key='&quot;United Republic Of Tanzan&quot;' value='&quot;Tanzania&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Country of Nationality]' derivation='None' name='[none:Country of Nationality:nk]' pivot='key' type='nominal' />
+            <column-instance column='[0-14]' derivation='Sum' name='[sum:0-14:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[15-24]' derivation='Sum' name='[sum:15-24:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[25-34]' derivation='Sum' name='[sum:25-34:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[35-44]' derivation='Sum' name='[sum:35-44:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[45-54]' derivation='Sum' name='[sum:45-54:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[55-64]' derivation='Sum' name='[sum:55-64:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[65 and Above]' derivation='Sum' name='[sum:65 and Above:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1btsnot030sls412h510c0x9l02g].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:0-14:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:15-24:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:25-34:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:35-44:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:45-54:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:55-64:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1btsnot030sls412h510c0x9l02g].[sum:65 and Above:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1btsnot030sls412h510c0x9l02g].[none:Country of Nationality:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Afghanistan&quot;' function='range' level='[none:Country of Nationality:nk]' to='&quot;Oman&quot;' />
+              <groupfilter from='&quot;Pakistan&quot;' function='range' level='[none:Country of Nationality:nk]' to='&quot;Thailand&quot;' />
+              <groupfilter from='&quot;Turkey&quot;' function='range' level='[none:Country of Nationality:nk]' to='&quot;Yemen&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[sum:0-14:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[sum:15-24:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[sum:25-34:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[sum:35-44:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[sum:45-54:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[sum:55-64:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[sum:65 and Above:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[none:Country of Nationality:nk]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[:Measure Names]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[sum:0-14:qk]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[sum:15-24:qk]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[sum:25-34:qk]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[sum:35-44:qk]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[sum:45-54:qk]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[sum:55-64:qk]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[sum:65 and Above:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1btsnot030sls412h510c0x9l02g].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1btsnot030sls412h510c0x9l02g].[Multiple Values]</rows>
+        <cols>([federated.1btsnot030sls412h510c0x9l02g].[none:Country of Nationality:nk] / [federated.1btsnot030sls412h510c0x9l02g].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{3843D450-7F08-487D-B42B-4BFB3FA1BE88}' />
+    </worksheet>
+    <worksheet name='India FTA (in Million)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='India-Tourism-Statistics-2019-Table-2.7.2' name='federated.1btsnot030sls412h510c0x9l02g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1btsnot030sls412h510c0x9l02g'>
+            <column datatype='integer' name='[Arrivals]' role='measure' type='quantitative' />
+            <column datatype='real' name='[India - % Change]' role='measure' type='quantitative' />
+            <column datatype='real' name='[India - Number (in million)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[World - % Change]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Arrivals]' derivation='Sum' name='[sum:Arrivals:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[India - % Change]' derivation='Sum' name='[sum:India - % Change:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[India - Number (in million)]' derivation='Sum' name='[sum:India - Number (in million):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[World - % Change]' derivation='Sum' name='[sum:World - % Change:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1btsnot030sls412h510c0x9l02g].[none:Year:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Year:ok]' />
+              <groupfilter function='member' level='[none:Year:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[sum:Arrivals:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[sum:World - % Change:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[sum:Arrivals:qk]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[sum:World - % Change:qk]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1btsnot030sls412h510c0x9l02g].[sum:India - Number (in million):qk]' field-type='quantitative' max='17.144403940336645' min='-0.056321103748715406' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1btsnot030sls412h510c0x9l02g].[sum:India - % Change:qk]' />
+              <text column='[federated.1btsnot030sls412h510c0x9l02g].[sum:India - Number (in million):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1btsnot030sls412h510c0x9l02g].[sum:India - Number (in million):qk]</rows>
+        <cols>[federated.1btsnot030sls412h510c0x9l02g].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{ABB29340-3F56-40DB-92E9-72BC8D4078C8}' />
+    </worksheet>
+    <worksheet name='India FTA Rank'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='India-Tourism-Statistics-2019-Table-2.7.2' name='federated.1btsnot030sls412h510c0x9l02g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1btsnot030sls412h510c0x9l02g'>
+            <column caption='Rank of India - Split 1' datatype='integer' datatype-customized='true' name='[Rank of India - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1btsnot030sls412h510c0x9l02g].[Rank of India]'>
+              <calculation class='tableau' formula='INT(TRIM( SPLIT( [Rank of India], &quot;t&quot;, 1 ) ))' />
+            </column>
+            <column datatype='string' name='[Rank of India]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Rank of India - Split 1]' derivation='None' name='[none:Rank of India - Split 1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1btsnot030sls412h510c0x9l02g].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[federated.1btsnot030sls412h510c0x9l02g].[none:Rank of India - Split 1:ok]'>
+            <groupfilter from='24' function='range' level='[none:Rank of India - Split 1:ok]' to='54' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1btsnot030sls412h510c0x9l02g].[none:Rank of India - Split 1:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1btsnot030sls412h510c0x9l02g].[none:Rank of India - Split 1:ok]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[none:Rank of India - Split 1:ok]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1btsnot030sls412h510c0x9l02g].[none:Rank of India - Split 1:ok]' />
+              <text column='[federated.1btsnot030sls412h510c0x9l02g].[none:Rank of India - Split 1:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25187844038009644' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1btsnot030sls412h510c0x9l02g].[none:Year:qk]</rows>
+        <cols>[federated.1btsnot030sls412h510c0x9l02g].[none:Rank of India - Split 1:ok]</cols>
+      </table>
+      <simple-id uuid='{F9A331E4-05BE-4614-9501-35D611978035}' />
+    </worksheet>
+    <worksheet name='World and India 2006 to 2010'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='India-Tourism-Statistics-2019-Table-2.7.2' name='federated.1btsnot030sls412h510c0x9l02g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1btsnot030sls412h510c0x9l02g'>
+            <column datatype='real' name='[India - % Change]' role='measure' type='quantitative' />
+            <column datatype='real' name='[India - Number (in million)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[World - % Change]' role='measure' type='quantitative' />
+            <column datatype='real' name='[World - Number (in million)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[India - % Change]' derivation='Sum' name='[sum:India - % Change:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[India - Number (in million)]' derivation='Sum' name='[sum:India - Number (in million):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[World - % Change]' derivation='Sum' name='[sum:World - % Change:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[World - Number (in million)]' derivation='Sum' name='[sum:World - Number (in million):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[none:Year:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1btsnot030sls412h510c0x9l02g].[sum:India - Number (in million):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1btsnot030sls412h510c0x9l02g].[sum:India - % Change:qk]' />
+              <text column='[federated.1btsnot030sls412h510c0x9l02g].[sum:India - Number (in million):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1btsnot030sls412h510c0x9l02g].[sum:World - Number (in million):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1btsnot030sls412h510c0x9l02g].[sum:World - % Change:qk]' />
+              <text column='[federated.1btsnot030sls412h510c0x9l02g].[sum:World - Number (in million):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1btsnot030sls412h510c0x9l02g].[sum:World - Number (in million):qk] + [federated.1btsnot030sls412h510c0x9l02g].[sum:India - Number (in million):qk])</rows>
+        <cols>[federated.1btsnot030sls412h510c0x9l02g].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{619FC94C-E0B0-447E-8688-1ED4D08BCF25}' />
+    </worksheet>
+    <worksheet name='Worldwide FTA (in Million)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='India-Tourism-Statistics-2019-Table-2.7.2' name='federated.1btsnot030sls412h510c0x9l02g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1btsnot030sls412h510c0x9l02g'>
+            <column datatype='real' name='[World - % Change]' role='measure' type='quantitative' />
+            <column datatype='real' name='[World - Number (in million)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[World - % Change]' derivation='Sum' name='[sum:World - % Change:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[World - Number (in million)]' derivation='Sum' name='[sum:World - Number (in million):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[none:Year:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1btsnot030sls412h510c0x9l02g].[sum:World - % Change:qk]' />
+              <text column='[federated.1btsnot030sls412h510c0x9l02g].[sum:World - Number (in million):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1btsnot030sls412h510c0x9l02g].[sum:World - Number (in million):qk]</rows>
+        <cols>[federated.1btsnot030sls412h510c0x9l02g].[none:Year:qk]</cols>
+        <page-trail-options enabled='true' mark-color-auto='false' mark-type='all' />
+      </table>
+      <simple-id uuid='{78C8F4FA-7E1C-413E-BB37-C8985CBF77EC}' />
+    </worksheet>
+    <worksheet name='world tourists to India 2018'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='India-Tourism-Statistics-2019-Table-2.7.2' name='federated.1btsnot030sls412h510c0x9l02g' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1btsnot030sls412h510c0x9l02g'>
+            <column datatype='integer' name='[Arrivals (in Numbers)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Arrivals]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country of Nationality]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Kazakhistan&quot;' value='&quot;Kazakhstan&quot;' />
+                <semantic-value key='&quot;United Republic Of Tanzan&quot;' value='&quot;Tanzania&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Country of Nationality]' derivation='None' name='[none:Country of Nationality:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Arrivals (in Numbers)]' derivation='Sum' name='[sum:Arrivals (in Numbers):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Arrivals]' derivation='Sum' name='[sum:Arrivals:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1btsnot030sls412h510c0x9l02g].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1btsnot030sls412h510c0x9l02g].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[:Measure Names]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[Latitude (generated)]</column>
+            <column>[federated.1btsnot030sls412h510c0x9l02g].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1btsnot030sls412h510c0x9l02g].[Longitude (generated)]' field-type='quantitative' max='23952238.033468097' min='-21331053.935179565' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1btsnot030sls412h510c0x9l02g].[Latitude (generated)]' field-type='quantitative' max='15238617.104858339' min='-10892801.561925285' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1btsnot030sls412h510c0x9l02g].[sum:Arrivals (in Numbers):qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1btsnot030sls412h510c0x9l02g].[none:Country of Nationality:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1btsnot030sls412h510c0x9l02g].[none:Country of Nationality:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1btsnot030sls412h510c0x9l02g].[none:Country of Nationality:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='light' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1btsnot030sls412h510c0x9l02g].[none:Country of Nationality:nk]' />
+              <text column='[federated.1btsnot030sls412h510c0x9l02g].[sum:Arrivals (in Numbers):qk]' />
+              <lod column='[federated.1btsnot030sls412h510c0x9l02g].[sum:Arrivals:qk]' />
+              <geometry column='[federated.1btsnot030sls412h510c0x9l02g].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1btsnot030sls412h510c0x9l02g].[Latitude (generated)]</rows>
+        <cols>[federated.1btsnot030sls412h510c0x9l02g].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{91031A0F-080C-401E-AA90-9E6C9C972FFF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Foriegn Tourist Arrival Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='India-Tourism-Statistics-2019-Table-2.7.2' name='federated.1btsnot030sls412h510c0x9l02g' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1btsnot030sls412h510c0x9l02g'>
+        <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='17' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='5125' id='18' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92875' id='7' param='horz' w='98400' x='800' y='6125'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='92875' id='5' w='82400' x='800' y='6125'>
+                <zone h='23220' id='3' name='India FTA (in Million)' w='82400' x='800' y='75780'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='23218' id='9' name='Worldwide FTA (in Million)' w='82400' x='800' y='52562'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46437' id='12' name='world tourists to India 2018' w='41200' x='800' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46437' id='15' name='India FTA Rank' w='41200' x='42000' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='92875' id='6' is-fixed='true' param='vert' w='16000' x='83200' y='6125'>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8125' id='8' name='India FTA (in Million)' pane-specification-id='2' param='[federated.1btsnot030sls412h510c0x9l02g].[sum:India - % Change:qk]' w='16000' x='83200' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='8625' id='10' name='Worldwide FTA (in Million)' param='[federated.1btsnot030sls412h510c0x9l02g].[none:Year:qk]' show-domain='false' show-null-ctrls='false' w='16000' x='83200' y='14250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8125' id='11' name='Worldwide FTA (in Million)' pane-specification-id='0' param='[federated.1btsnot030sls412h510c0x9l02g].[sum:World - % Change:qk]' w='16000' x='83200' y='22875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true'>Foriegn Tourist Arrival Analysis</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='22' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='21' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='5125' id='18' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46437' id='12' is-fixed='true' name='world tourists to India 2018' w='41200' x='800' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46437' id='15' is-fixed='true' name='India FTA Rank' w='41200' x='42000' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='8625' id='10' name='Worldwide FTA (in Million)' param='[federated.1btsnot030sls412h510c0x9l02g].[none:Year:qk]' show-domain='false' show-null-ctrls='false' w='16000' x='83200' y='14250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='178' h='23218' id='9' is-fixed='true' name='Worldwide FTA (in Million)' w='82400' x='800' y='52562'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8125' id='11' name='Worldwide FTA (in Million)' pane-specification-id='0' param='[federated.1btsnot030sls412h510c0x9l02g].[sum:World - % Change:qk]' w='16000' x='83200' y='22875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='178' h='23220' id='3' is-fixed='true' name='India FTA (in Million)' w='82400' x='800' y='75780'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8125' id='8' name='India FTA (in Million)' pane-specification-id='2' param='[federated.1btsnot030sls412h510c0x9l02g].[sum:India - % Change:qk]' w='16000' x='83200' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{58B7D65D-1EC5-4C8E-9715-08C6A6B89DE8}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='477' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98340' id='1' param='vert' removable='false' w='98426' x='787' y='830'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='3423' id='3' w='98426' x='787' y='830' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' fixed-size='121' h='12552' id='4' is-fixed='true' paired-zone-id='5' removable='false' w='98426' x='787' y='4253' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='82365' id='5' paired-zone-id='4' removable='false' w='98426' x='787' y='16805'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='World Foreign Tourists Arrival Dipped from 917 Million to 883 Million from 2008 to 2009 , So is India FTA countwhich fell 2.1 %  from 5.2 Million to 5.17 Million from  2008 to 2009 . This dip can have many deciding factors such as Terror Strikes, Natural Disasters , Economy Dips etc.' captured-sheet='World and India 2006 to 2010' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{4F65E285-FA13-4171-A518-5582C752DF83}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='world tourists to India 2018'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1btsnot030sls412h510c0x9l02g].[none:Country of Nationality:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4D9610F8-61A4-422D-96FE-9A912B958691}' />
+    </window>
+    <window class='worksheet' name='Worldwide FTA (in Million)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1btsnot030sls412h510c0x9l02g].[sum:World - % Change:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F8442C2C-B2BE-4FA4-BE0E-83936D9811EA}' />
+    </window>
+    <window class='worksheet' name='India FTA (in Million)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1btsnot030sls412h510c0x9l02g].[sum:World - % Change:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='2' param='[federated.1btsnot030sls412h510c0x9l02g].[sum:India - % Change:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BE920448-FA5F-4848-BD7F-D9BDBBD62314}' />
+    </window>
+    <window class='worksheet' name='FTA based on Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1btsnot030sls412h510c0x9l02g].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0EB2DBFC-3FC1-48E9-9C74-AEFEF2A53EE2}' />
+    </window>
+    <window class='worksheet' name='India FTA Rank'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1btsnot030sls412h510c0x9l02g].[none:Rank of India - Split 1:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A8FA5F4C-4090-494F-90C7-A11272AC238A}' />
+    </window>
+    <window class='worksheet' name='World and India 2006 to 2010'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1btsnot030sls412h510c0x9l02g].[sum:World - % Change:qk]' type='color' />
+            <card pane-specification-id='1' param='[federated.1btsnot030sls412h510c0x9l02g].[sum:India - % Change:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E5183D23-91F6-41DA-A6B4-9AEDCDD7902A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='India FTA (in Million)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='India FTA Rank'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Worldwide FTA (in Million)'>
+          <current-page>
+            <multibucket>
+              <bucket>2018</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='world tourists to India 2018'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{985BE200-6B4C-4233-84C9-AB9C823A3B73}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{3846B0AE-D438-40FE-A6DE-937203653884}' />
+    </window>
+  </windows>
+</workbook>
